@@ -1,0 +1,761 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Trev's Cafe and Restaurant | Dickson</title>
+    <meta
+      name="description"
+      content="Order breakfast, lunch, dinner, takeaway, catering and Trev's specials online from Trev's Cafe and Restaurant in Dickson."
+    />
+    <link rel="icon" href="assets/trevs-logo.svg" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Trev's Cafe and Restaurant home">
+        <img src="assets/trevs-logo.svg" alt="Trev's Cafe and Restaurant logo" />
+        <span>
+          <strong>Trev's Cafe and Restaurant</strong>
+          <small>Dickson, Canberra</small>
+        </span>
+      </a>
+      <button class="mobile-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+      <nav id="main-nav" class="main-nav" aria-label="Primary navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About Trevs</a>
+        <div class="nav-dropdown">
+          <button type="button" aria-expanded="false">Menu</button>
+          <div class="dropdown-panel" role="menu">
+            <a href="#breakfast" role="menuitem" data-category-jump="breakfast">Breakfast/Lunch Menu</a>
+            <a href="#dinner" role="menuitem" data-category-jump="dinner">Dinner Menu</a>
+            <a href="#takeaway" role="menuitem" data-category-jump="takeaway">Takeaway Menu</a>
+            <a href="#catering-menu" role="menuitem" data-category-jump="catering">Catering Menu</a>
+          </div>
+        </div>
+        <a href="#catering">Catering</a>
+        <a href="#taste-collective">Trevs Taste Collective</a>
+        <a href="#meal-deal">Trevs Meal Deal</a>
+        <a href="https://bookings.nowbookit.com" target="_blank" rel="noreferrer">Book Online</a>
+      </nav>
+      <button class="cart-button" type="button" data-open-cart>
+        Cart <span id="cart-count">0</span>
+      </button>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Breakfast, lunch, dinner, takeaway and catering</p>
+          <h1>Trev's Cafe and Restaurant</h1>
+          <p>
+            Contemporary cafe favourites, handmade pasta, generous dinner plates and Dickson catering,
+            ready for pickup or a relaxed table booking.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-link" href="#order">Order Online</a>
+            <a class="secondary-link" href="https://app.squareup.com/gift/ML98DXGN0QVH1/order" target="_blank" rel="noreferrer">Gift Vouchers</a>
+          </div>
+        </div>
+        <div class="hero-card" aria-label="Today at Trev's">
+          <img src="assets/trevs-logo.svg" alt="" />
+          <strong>Open for pickup orders</strong>
+          <span>Breakfast/Lunch 8:00 AM-2:30 PM · Dinner 5:30 PM-9:00 PM</span>
+        </div>
+      </section>
+
+      <section class="promo-strip" aria-label="Monday special">
+        <strong>Monday 10% OFF</strong>
+        <span>"Start the week with something worth sitting down for."</span>
+        <button type="button" data-open-promo>View offer</button>
+      </section>
+
+      <section id="order" class="order-layout">
+        <aside class="category-rail" aria-label="Menu categories">
+          <span>Our Menu</span>
+          <button type="button" class="active" data-category="specials">Trev's Specials</button>
+          <button type="button" data-category="breakfast">Breakfast/Lunch</button>
+          <button type="button" data-category="dinner">Dinner</button>
+          <button type="button" data-category="takeaway">Takeaway</button>
+          <button type="button" data-category="catering">Catering</button>
+        </aside>
+        <section class="menu-area">
+          <div class="menu-heading">
+            <div>
+              <p class="eyebrow" id="menu-kicker">Trev's Specials</p>
+              <h2 id="menu-title">Trev's Specials</h2>
+            </div>
+            <label class="search-box">
+              <span>Search</span>
+              <input id="menu-search" type="search" placeholder="Find a dish" />
+            </label>
+          </div>
+          <div class="menu-grid" id="menu-grid" aria-live="polite"></div>
+        </section>
+      </section>
+
+      <section id="about" class="split-section">
+        <div>
+          <p class="eyebrow">About Trevs</p>
+          <h2>Local, generous and built around good food.</h2>
+        </div>
+        <p>
+          Trevs is a Dickson cafe and restaurant serving brunch staples, lunch favourites, pasta,
+          dinner mains and event catering. The site is structured so breakfast/lunch, dinner,
+          takeaway and catering stay cleanly separated for easy ordering.
+        </p>
+      </section>
+
+      <section id="taste-collective" class="feature-band">
+        <div>
+          <p class="eyebrow">Trevs Taste Collective</p>
+          <h2>A platter of three choices and a mini juice.</h2>
+        </div>
+        <a class="primary-link" href="#order" data-category-jump="breakfast">Build from breakfast</a>
+      </section>
+
+      <section id="meal-deal" class="split-section">
+        <div>
+          <p class="eyebrow">Trevs Meal Deal</p>
+          <h2>Simple takeaway combos for busy nights.</h2>
+        </div>
+        <p>Meal deals can be managed from the admin portal, highlighted as specials, and added to cart just like standard menu items.</p>
+      </section>
+
+      <section id="catering" class="catering-panel">
+        <div>
+          <p class="eyebrow">Catering</p>
+          <h2>Platters, lunches and custom event food for Canberra teams.</h2>
+          <p>
+            Email <a href="mailto:trevsonlinebookings@gmail.com">trevsonlinebookings@gmail.com</a>
+            or call <a href="tel:+61406369224">0406 369 224</a> to confirm dietary needs, delivery
+            and timing.
+          </p>
+        </div>
+        <button type="button" class="secondary-link" data-category-jump="catering">View Catering Menu</button>
+      </section>
+    </main>
+
+    <aside class="cart-drawer" id="cart-drawer" aria-hidden="true" aria-label="Shopping cart">
+      <div class="drawer-header">
+        <strong>Your order</strong>
+        <button type="button" data-close-cart aria-label="Close cart">×</button>
+      </div>
+      <div id="cart-items" class="cart-items"></div>
+      <div class="cart-total">
+        <span>Total</span>
+        <strong id="cart-total">$0.00</strong>
+      </div>
+      <label class="field">
+        <span>Name</span>
+        <input id="customer-name" type="text" placeholder="Customer name" />
+      </label>
+      <label class="field">
+        <span>Phone</span>
+        <input id="customer-phone" type="tel" placeholder="Phone number" />
+      </label>
+      <label class="field">
+        <span>Order notes</span>
+        <textarea id="order-notes" rows="3" placeholder="Pickup time, dietary notes, etc."></textarea>
+      </label>
+      <div class="checkout-actions">
+        <button type="button" class="secondary-button" data-pay-counter>Pay at Counter</button>
+        <button type="button" class="primary-button" data-pay-now>Pay Now</button>
+      </div>
+      <p class="checkout-note">Card payment is ready to connect to a Square checkout link in the admin settings.</p>
+    </aside>
+
+    <section class="admin-panel" id="admin" aria-label="Admin portal">
+      <div class="admin-header">
+        <div>
+          <p class="eyebrow">Admin Portal</p>
+          <h2>Menu, photos and order manager</h2>
+        </div>
+        <button type="button" class="secondary-button" data-reset-menu>Reset demo content</button>
+      </div>
+      <div class="admin-grid">
+        <form id="menu-form" class="admin-card">
+          <h3>Update menu item</h3>
+          <label class="field">
+            <span>Item</span>
+            <select id="admin-item"></select>
+          </label>
+          <label class="field">
+            <span>Name</span>
+            <input id="admin-name" type="text" />
+          </label>
+          <label class="field">
+            <span>Description</span>
+            <textarea id="admin-description" rows="4"></textarea>
+          </label>
+          <label class="field">
+            <span>Price</span>
+            <input id="admin-price" type="number" min="0" step="0.5" />
+          </label>
+          <label class="field">
+            <span>Photo URL or file path</span>
+            <input id="admin-image" type="text" placeholder="assets/menu/item.jpg" />
+          </label>
+          <button class="primary-button" type="submit">Save item</button>
+        </form>
+        <div class="admin-card">
+          <h3>Orders</h3>
+          <div id="orders-list" class="orders-list"></div>
+        </div>
+        <form id="settings-form" class="admin-card">
+          <h3>Payment settings</h3>
+          <label class="field">
+            <span>Square checkout link</span>
+            <input id="square-link" type="url" placeholder="https://checkout.square.site/..." />
+          </label>
+          <button class="primary-button" type="submit">Save payment link</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <img src="assets/trevs-logo.svg" alt="Trev's Cafe and Restaurant logo" />
+      <div>
+        <strong>Trev's Cafe and Restaurant</strong>
+        <span>0406 369 224 · Dickson, ACT · trevsatdickson.com.au</span>
+      </div>
+      <a href="#admin">Admin Portal</a>
+    </footer>
+
+    <div class="modal" id="promo-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="promo-title">
+      <div class="modal-card">
+        <button type="button" class="modal-close" data-close-promo aria-label="Close promotion">×</button>
+        <p class="eyebrow">Monday only</p>
+        <h2 id="promo-title">10% OFF your order</h2>
+        <p>"Good food makes Monday feel less like Monday."</p>
+        <a class="primary-link" href="#order" data-close-promo>Order now</a>
+      </div>
+    </div>
+
+    <script id="menu-data" type="application/json">
+[
+  {
+    "id": "sp1",
+    "category": "specials",
+    "name": "Trevs Taste Collective",
+    "price": 23.5,
+    "description": "A platter of three breakfast choices with a mini juice of the day.",
+    "image": "assets/menu/trevs-taste-collective.jpg"
+  },
+  {
+    "id": "sp2",
+    "category": "specials",
+    "name": "Breakfast Sampler",
+    "price": 24,
+    "description": "Corn fritter, benedict bite, mini yoghurt and seasonal breakfast tastes on one share plate.",
+    "image": "assets/menu/breakfast-sampler.jpg"
+  },
+  {
+    "id": "sp3",
+    "category": "specials",
+    "name": "Monday Cafe Special",
+    "price": 18.5,
+    "description": "Rotating chef special. Monday orders can receive 10% off at confirmation.",
+    "image": "assets/menu/berry-pancakes.jpg"
+  },
+  {
+    "id": "sp4",
+    "category": "specials",
+    "name": "Trev's Burger Meal",
+    "price": 24,
+    "description": "Chicken, bacon, avocado and cos lettuce with chips and house aioli.",
+    "image": "assets/menu/trevs-chicken-burger.jpg"
+  },
+  {
+    "id": "sp5",
+    "category": "specials",
+    "name": "Sticky Pork Ribs",
+    "price": 28,
+    "description": "Stacked pork ribs with corn salsa and creamy herb sauce.",
+    "image": "assets/menu/sticky-pork-ribs.jpg"
+  },
+  {
+    "id": "sp6",
+    "category": "specials",
+    "name": "Steak Dinner Special",
+    "price": 32,
+    "description": "Seared steak with mash, greens, rocket and rich pan jus.",
+    "image": "assets/menu/steak-dinner-special.jpg"
+  },
+  {
+    "id": "sp7",
+    "category": "specials",
+    "name": "Chicken Waffle Stack",
+    "price": 24,
+    "description": "Crispy chicken pieces and waffles finished with barbecue, aioli and maple-style sauce.",
+    "image": "assets/menu/chicken-waffle-stack.jpg"
+  },
+  {
+    "id": "b1",
+    "category": "breakfast",
+    "name": "Trevs Brekky",
+    "price": 21.5,
+    "description": "Poached eggs, pork sausage, mushroom, spinach, bacon, sourdough toast and kasundi.",
+    "image": "assets/menu/trevs-brekky.jpg"
+  },
+  {
+    "id": "b2",
+    "category": "breakfast",
+    "name": "Corn Fritters with Smoked Salmon",
+    "price": 22,
+    "description": "Corn fritters stacked with smoked salmon, lemon ricotta, tomato and micro herbs.",
+    "image": "assets/menu/corn-fritters-smoked-salmon.jpg"
+  },
+  {
+    "id": "b3",
+    "category": "breakfast",
+    "name": "Corn Fritters with Avocado",
+    "price": 20,
+    "description": "Corn fritters with avocado, tomato salsa and fresh herbs.",
+    "image": "assets/menu/corn-fritters-avocado.jpg"
+  },
+  {
+    "id": "b4",
+    "category": "breakfast",
+    "name": "Berry Pancakes",
+    "price": 18.5,
+    "description": "Pancakes with berries, maple syrup and vanilla ice cream.",
+    "image": "assets/menu/berry-pancakes.jpg"
+  },
+  {
+    "id": "b5",
+    "category": "breakfast",
+    "name": "Berry Waffles",
+    "price": 19,
+    "description": "Crisp waffles with berries, almonds, custard cream and syrup.",
+    "image": "assets/menu/berry-waffles.jpg"
+  },
+  {
+    "id": "b6",
+    "category": "breakfast",
+    "name": "Brekky Roll",
+    "price": 14,
+    "description": "Breakfast roll with sausage, roasted capsicum, greens and creamy sauce.",
+    "image": "assets/menu/brekky-roll.jpg"
+  },
+  {
+    "id": "b7",
+    "category": "breakfast",
+    "name": "Loaded Brekky Roll",
+    "price": 18,
+    "description": "A larger brekky roll with sausage, greens, roasted capsicum and house sauce.",
+    "image": "assets/menu/loaded-brekky-roll.jpg"
+  },
+  {
+    "id": "b8",
+    "category": "breakfast",
+    "name": "Fruit Bruschetta",
+    "price": 8,
+    "description": "Sweet breakfast plate with berries, fruit, cream and a toasted base.",
+    "image": "assets/menu/berry-cake.jpg"
+  },
+  {
+    "id": "b9",
+    "category": "breakfast",
+    "name": "Trev's Chicken Burger",
+    "price": 24,
+    "description": "Chicken, bacon, avocado, cos lettuce, chips and aioli for lunch service.",
+    "image": "assets/menu/trevs-chicken-burger.jpg"
+  },
+  {
+    "id": "b10",
+    "category": "breakfast",
+    "name": "Flathead and Chips",
+    "price": 18.5,
+    "description": "Battered flathead with lemon, chips and lime aioli.",
+    "image": "assets/menu/flathead-and-chips.jpg"
+  },
+  {
+    "id": "b11",
+    "category": "breakfast",
+    "name": "Lamb Shoulder",
+    "price": 29,
+    "description": "Tender lamb shoulder with minted pea puree, feta, pine nuts and vincotto.",
+    "image": "assets/menu/lamb-shoulder.jpg"
+  },
+  {
+    "id": "b12",
+    "category": "breakfast",
+    "name": "Caesar Salad + Chicken",
+    "price": 21,
+    "description": "Cos lettuce, chicken, croutons, parmesan and creamy Caesar dressing.",
+    "image": "assets/menu/chicken-caesar-salad.jpg"
+  },
+  {
+    "id": "b13",
+    "category": "breakfast",
+    "name": "Roast Pumpkin Salad + Chicken",
+    "price": 18,
+    "description": "Roast pumpkin, chicken, feta, walnuts, spinach and sweet balsamic.",
+    "image": "assets/menu/roast-pumpkin-salad-chicken.jpg"
+  },
+  {
+    "id": "b14",
+    "category": "breakfast",
+    "name": "Pomegranate Salad",
+    "price": 15,
+    "description": "Eggplant, feta, pine nuts, leaves, yoghurt and pomegranate molasses.",
+    "image": "assets/menu/pomegranate-salad-platter.jpg"
+  },
+  {
+    "id": "b15",
+    "category": "breakfast",
+    "name": "Roast Pumpkin Salad",
+    "price": 16,
+    "description": "Roast pumpkin, feta, walnuts, mixed leaves and balsamic glaze.",
+    "image": "assets/menu/roast-pumpkin-salad.jpg"
+  },
+  {
+    "id": "d1",
+    "category": "dinner",
+    "name": "Orecchiette Chorizo",
+    "price": 21,
+    "description": "Chorizo, olives, cherry tomatoes, rocket and olive oil.",
+    "image": "assets/menu/orecchiette-chorizo.jpg"
+  },
+  {
+    "id": "d2",
+    "category": "dinner",
+    "name": "Orecchiette Saffron Prawn",
+    "price": 27,
+    "description": "Australian king prawn, saffron, broccoli, cherry tomatoes, lemon, rocket and EVO.",
+    "image": "assets/menu/orecchiette-saffron-prawn.jpg"
+  },
+  {
+    "id": "d3",
+    "category": "dinner",
+    "name": "Fettuccine Bolognaise",
+    "price": 20,
+    "description": "Slow-cooked bolognaise with fettuccine and parmesan.",
+    "image": "assets/menu/fettuccine-bolognaise.jpg"
+  },
+  {
+    "id": "d4",
+    "category": "dinner",
+    "name": "Fettuccine Carbonara",
+    "price": 24,
+    "description": "Pialligo bacon, egg, cream and parmesan.",
+    "image": "assets/menu/fettuccine-carbonara.jpg"
+  },
+  {
+    "id": "d5",
+    "category": "dinner",
+    "name": "Chicken Pesto Fettuccine",
+    "price": 21,
+    "description": "Chicken, pesto, spinach, semi-dried tomatoes and cream.",
+    "image": "assets/menu/chicken-pesto-fettuccine.jpg"
+  },
+  {
+    "id": "d6",
+    "category": "dinner",
+    "name": "Smoked Salmon Fettuccine",
+    "price": 23,
+    "description": "Smoked salmon, capers, asparagus, broccolini, spinach and cream.",
+    "image": "assets/menu/smoked-salmon-fettuccine.jpg"
+  },
+  {
+    "id": "d7",
+    "category": "dinner",
+    "name": "Chicken Dinner Special",
+    "price": 26,
+    "description": "Chicken with greens, crisp prosciutto and a warm savoury sauce.",
+    "image": "assets/menu/chicken-dinner-special.jpg"
+  },
+  {
+    "id": "d8",
+    "category": "dinner",
+    "name": "Rocket Parmesan Salad",
+    "price": 12,
+    "description": "Rocket, shaved parmesan, olive oil and citrus dressing.",
+    "image": "assets/menu/rocket-parmesan-salad.jpg"
+  },
+  {
+    "id": "d9",
+    "category": "dinner",
+    "name": "Sticky Chicken Wings",
+    "price": 16,
+    "description": "Glazed chicken wings with sesame and rocket.",
+    "image": "assets/menu/sticky-chicken-wings.jpg"
+  },
+  {
+    "id": "d10",
+    "category": "dinner",
+    "name": "Chocolate Brownie",
+    "price": 14,
+    "description": "Chocolate brownie with berries, vanilla ice cream and fairy floss.",
+    "image": "assets/menu/chocolate-brownie.jpg"
+  },
+  {
+    "id": "d11",
+    "category": "dinner",
+    "name": "Lemon Tart",
+    "price": 14,
+    "description": "Lemon tart with sorbet, pistachio crumb and fairy floss.",
+    "image": "assets/menu/lemon-tart.jpg"
+  },
+  {
+    "id": "d12",
+    "category": "dinner",
+    "name": "Berry Cake Dessert",
+    "price": 14,
+    "description": "Berry cake with vanilla ice cream, berry compote and crumb.",
+    "image": "assets/menu/berry-cake.jpg"
+  },
+  {
+    "id": "t1",
+    "category": "takeaway",
+    "name": "Takeaway Trevs Burger",
+    "price": 24,
+    "description": "Chicken, bacon, avocado, cos lettuce and chips packed for pickup.",
+    "image": "assets/menu/trevs-chicken-burger.jpg"
+  },
+  {
+    "id": "t2",
+    "category": "takeaway",
+    "name": "Takeaway Flathead and Chips",
+    "price": 18.5,
+    "description": "Battered flathead, lemon, chips and lime aioli.",
+    "image": "assets/menu/flathead-and-chips.jpg"
+  },
+  {
+    "id": "t3",
+    "category": "takeaway",
+    "name": "Takeaway Carbonara",
+    "price": 24,
+    "description": "Fettuccine with Pialligo bacon, egg, cream and parmesan.",
+    "image": "assets/menu/fettuccine-carbonara.jpg"
+  },
+  {
+    "id": "t4",
+    "category": "takeaway",
+    "name": "Takeaway Bolognaise",
+    "price": 20,
+    "description": "Fettuccine with house bolognaise and parmesan.",
+    "image": "assets/menu/fettuccine-bolognaise.jpg"
+  },
+  {
+    "id": "t5",
+    "category": "takeaway",
+    "name": "Takeaway Chicken Pesto",
+    "price": 21,
+    "description": "Fettuccine with chicken, pesto, spinach and semi-dried tomatoes.",
+    "image": "assets/menu/chicken-pesto-fettuccine.jpg"
+  },
+  {
+    "id": "t6",
+    "category": "takeaway",
+    "name": "Takeaway Chicken Wings",
+    "price": 16,
+    "description": "Crispy chicken wings with barbecue sauce and aioli.",
+    "image": "assets/menu/takeaway-chicken-wings.jpg"
+  },
+  {
+    "id": "t7",
+    "category": "takeaway",
+    "name": "Takeaway Chicken Waffle Stack",
+    "price": 24,
+    "description": "Crispy chicken and waffles finished with barbecue, aioli and maple-style sauce.",
+    "image": "assets/menu/takeaway-chicken-waffle-stack.jpg"
+  },
+  {
+    "id": "t8",
+    "category": "takeaway",
+    "name": "Garlic Bread",
+    "price": 8,
+    "description": "Toasted garlic bread with herbs.",
+    "image": "assets/menu/garlic-bread.jpg"
+  },
+  {
+    "id": "t9",
+    "category": "takeaway",
+    "name": "Margherita Pizza",
+    "price": 18,
+    "description": "Tomato base and melted mozzarella.",
+    "image": "assets/menu/margherita-pizza.jpg"
+  },
+  {
+    "id": "t10",
+    "category": "takeaway",
+    "name": "Salami Pizza",
+    "price": 21,
+    "description": "Salami, mozzarella, tomato base and parsley.",
+    "image": "assets/menu/salami-pizza.jpg"
+  },
+  {
+    "id": "t11",
+    "category": "takeaway",
+    "name": "Ham and Pineapple Pizza",
+    "price": 21,
+    "description": "Ham, pineapple, mozzarella and tomato base.",
+    "image": "assets/menu/ham-pineapple-pizza.jpg"
+  },
+  {
+    "id": "t12",
+    "category": "takeaway",
+    "name": "Meat Lovers Pizza",
+    "price": 24,
+    "description": "Meats, mozzarella and tomato base on a crisp pizza base.",
+    "image": "assets/menu/meat-lovers-pizza.jpg"
+  },
+  {
+    "id": "t13",
+    "category": "takeaway",
+    "name": "BBQ Chicken Pizza",
+    "price": 24,
+    "description": "Chicken, jalapeno, mozzarella and barbecue sauce.",
+    "image": "assets/menu/bbq-chicken-pizza.jpg"
+  },
+  {
+    "id": "t14",
+    "category": "takeaway",
+    "name": "Peri Peri Chicken Pizza",
+    "price": 24,
+    "description": "Chicken, capsicum, jalapeno, mozzarella and peri peri drizzle.",
+    "image": "assets/menu/peri-peri-chicken-pizza.jpg"
+  },
+  {
+    "id": "t15",
+    "category": "takeaway",
+    "name": "Garlic Prawn Pizza",
+    "price": 26,
+    "description": "Prawns, garlic, tomato, onion, mozzarella and parsley.",
+    "image": "assets/menu/garlic-prawn-pizza.jpg"
+  },
+  {
+    "id": "t16",
+    "category": "takeaway",
+    "name": "Chicken Rocket Pizza",
+    "price": 24,
+    "description": "Chicken, rocket, tomato base, mozzarella and creamy drizzle.",
+    "image": "assets/menu/chicken-rocket-pizza.jpg"
+  },
+  {
+    "id": "t17",
+    "category": "takeaway",
+    "name": "Mushroom Pizza",
+    "price": 22,
+    "description": "Mushroom, mozzarella, tomato base and fresh herbs.",
+    "image": "assets/menu/mushroom-pizza.jpg"
+  },
+  {
+    "id": "t18",
+    "category": "takeaway",
+    "name": "Prosciutto Rocket Pizza",
+    "price": 24,
+    "description": "Prosciutto, rocket, feta, olives and balsamic glaze.",
+    "image": "assets/menu/prosciutto-rocket-pizza.jpg"
+  },
+  {
+    "id": "t19",
+    "category": "takeaway",
+    "name": "Pumpkin Feta Pizza",
+    "price": 23,
+    "description": "Roast pumpkin, spinach, feta, pine nuts and red onion.",
+    "image": "assets/menu/pumpkin-feta-pizza.jpg"
+  },
+  {
+    "id": "t20",
+    "category": "takeaway",
+    "name": "Vegetarian Pizza",
+    "price": 23,
+    "description": "Vegetables, olives, tomato base, mozzarella and rocket.",
+    "image": "assets/menu/vegetarian-pizza.jpg"
+  },
+  {
+    "id": "t21",
+    "category": "takeaway",
+    "name": "Capricciosa Pizza",
+    "price": 24,
+    "description": "Ham, mushroom, olives, mozzarella and parsley.",
+    "image": "assets/menu/capricciosa-pizza.jpg"
+  },
+  {
+    "id": "t22",
+    "category": "takeaway",
+    "name": "Spicy Pepperoni Pizza",
+    "price": 23,
+    "description": "Pepperoni, jalapeno, capsicum, mozzarella and tomato base.",
+    "image": "assets/menu/spicy-pepperoni-pizza.jpg"
+  },
+  {
+    "id": "t23",
+    "category": "takeaway",
+    "name": "Lamb Pizza",
+    "price": 25,
+    "description": "Lamb, eggplant, onion, spinach and garlic yoghurt drizzle.",
+    "image": "assets/menu/lamb-pizza.jpg"
+  },
+  {
+    "id": "c1",
+    "category": "catering",
+    "name": "Breakfast Muffin Platter",
+    "price": 48,
+    "description": "Assorted muffins for meetings and morning events.",
+    "image": ""
+  },
+  {
+    "id": "c2",
+    "category": "catering",
+    "name": "Breakfast Sampler Platter",
+    "price": 88,
+    "description": "Mini breakfast bites inspired by Trevs Taste Collective for shared catering.",
+    "image": "assets/menu/trevs-taste-collective.jpg"
+  },
+  {
+    "id": "c3",
+    "category": "catering",
+    "name": "Wraps and Baguettes",
+    "price": 76,
+    "description": "Mixed wraps and baguettes with vegetarian options.",
+    "image": ""
+  },
+  {
+    "id": "c4",
+    "category": "catering",
+    "name": "Pasta Catering Tray",
+    "price": 85,
+    "description": "Large-format pasta tray for team lunches.",
+    "image": "assets/menu/fettuccine-bolognaise.jpg"
+  },
+  {
+    "id": "c5",
+    "category": "catering",
+    "name": "Salad Catering Bowl",
+    "price": 58,
+    "description": "Seasonal salad bowl with dietary options available.",
+    "image": "assets/menu/pomegranate-salad-platter.jpg"
+  },
+  {
+    "id": "c6",
+    "category": "catering",
+    "name": "Pizza and Pasta Lunch",
+    "price": 110,
+    "description": "Mixed pizza and pasta selection for groups.",
+    "image": "assets/menu/meat-lovers-pizza.jpg"
+  },
+  {
+    "id": "c7",
+    "category": "catering",
+    "name": "Sweets Platter",
+    "price": 62,
+    "description": "Assorted slices, cakes and sweet bites for afternoon catering.",
+    "image": "assets/menu/lemon-tart.jpg"
+  },
+  {
+    "id": "c8",
+    "category": "catering",
+    "name": "Custom Event Catering",
+    "price": 0,
+    "description": "Chef Trev can tailor a menu to your event. Submit as an enquiry.",
+    "image": ""
+  }
+]
+</script>
+    <script src="app.js"></script>
+  </body>
+</html>

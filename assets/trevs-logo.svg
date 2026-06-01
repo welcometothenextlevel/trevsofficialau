@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" role="img" aria-labelledby="title desc">
+  <title id="title">Trev's Cafe and Restaurant logo</title>
+  <desc id="desc">A warm circular Trev's logo placeholder for food photos and branding.</desc>
+  <defs>
+    <linearGradient id="plate" x1="110" x2="540" y1="90" y2="550" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff8e7"/>
+      <stop offset="1" stop-color="#f3d59a"/>
+    </linearGradient>
+    <linearGradient id="leaf" x1="196" x2="450" y1="156" y2="448" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2e8b69"/>
+      <stop offset="1" stop-color="#7b9f35"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="640" fill="#fff4dc"/>
+  <circle cx="320" cy="320" r="250" fill="#163b35"/>
+  <circle cx="320" cy="320" r="210" fill="url(#plate)"/>
+  <path fill="url(#leaf)" d="M220 338c81-5 132-61 161-161 55 83 43 178-29 231-55 40-122 31-170-16 15-27 27-43 38-54Z"/>
+  <path fill="#c8482f" d="M381 184c62 26 96 68 102 125 3 29-5 60-24 91-15-81-52-139-110-175 7-17 18-30 32-41Z"/>
+  <path fill="none" stroke="#163b35" stroke-linecap="round" stroke-width="18" d="M213 425c52-64 107-115 166-153"/>
+  <text x="320" y="309" fill="#163b35" font-family="Georgia, 'Times New Roman', serif" font-size="102" font-weight="700" text-anchor="middle">Trev's</text>
+  <text x="320" y="374" fill="#6a3f22" font-family="Arial, sans-serif" font-size="34" font-weight="700" letter-spacing="3" text-anchor="middle">CAFE &amp; RESTAURANT</text>
+  <text x="320" y="498" fill="#fff4dc" font-family="Arial, sans-serif" font-size="28" font-weight="700" letter-spacing="2" text-anchor="middle">DICKSON</text>
+</svg>
